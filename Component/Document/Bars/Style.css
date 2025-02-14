@@ -1,0 +1,90 @@
+[cmptype] {
+    height: 100%;
+    width: 100%;
+}
+[cmptype] [menu-grid] {
+    display: grid;
+    grid-template-rows: 153px auto;
+    height: 100%;
+    width: 100%;
+    background:#327db0 url("./Image/Background.png") fixed center center no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+
+[cmptype] [document-grid] {
+    display: grid;
+    grid-template-columns: 11px auto 214px;
+    height: 100%;
+    width: 100%;
+}
+[cmptype] [menu-bar-left-panel] {
+    background: url("./Image/panel_l.png") left top no-repeat;
+}
+[cmptype] [menu-bar-title] {
+    background: url("./Image/panel_bg.png") left top repeat-x;
+}
+
+[cmptype] [menu-bar-right-panel] {
+    background: url("./Image/panel_r.png") left top no-repeat;
+    position: relative;
+}
+[cmptype] [menu-bar-exit-grid] {
+    display: grid;
+    grid-template-columns: 25px auto;
+    height: 23px;
+    position: absolute;
+    right: 29px;
+    top: 15px;
+}
+
+[cmptype] [menu-bar-exit-grid] a{
+    color: #3d3d3d;
+
+}
+[cmptype] [menu-bar-icon-exit] {
+    background: url("./Image/Exit.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+[cmptype] [menu-bar-refresh-grid] {
+    display: grid;
+    grid-template-columns: 28px 25px auto;
+    position: absolute;
+    right: 19px;
+    top: 112px;
+    height: 27px;
+    align-items: center;
+    width: 124px;
+    text-align: center;
+    color: #3d3d3d;
+}
+
+[cmptype] [menu-bar-icon-refresh] {
+    background: url("./Image/Refresh.png");
+    background-repeat: no-repeat;
+    height: 19px;
+    width: 19px;
+}
+
+[cmptype] [menu-bar-icon-mail] {
+    background: url("./Image/mail.png");
+    background-repeat: no-repeat;
+    height: 17px;
+    width: 23px;
+}
+[cmptype] [menu-bar-user-info] {
+    font-size: 11px;
+    position: absolute;
+    left: -308px;
+}
+[cmptype] [menu-bar-user-info] table td:nth-child(1) {
+    text-align: right;
+}
+[cmptype] [menu-bar-user-info] table td:nth-child(1) {
+    text-align: left;
+    font-weight: bold;
+}
+
+
