@@ -18,8 +18,7 @@ export class BaseCtrl extends HTMLElement {
     constructor (fragment) {
         super();
         this.#shadow = this.attachShadow({ mode: "open" });
-        this.#fragment = fragment;
-        this.#shadow.appendChild(this.#fragment);
+        this.#shadow.appendChild(fragment);
         this.initComponent();
     }
 
@@ -100,9 +99,9 @@ export class BaseCtrl extends HTMLElement {
 
 
     initComponent() {
-        if (this.#fragment) {
-            this.setControl(this.#fragment.querySelector('[cmptype]') ?? null);
-            this.setControlText(this.#fragment.querySelector('[text]') ?? null);
+        if (this.#shadow) {
+            this.setControl(this.#shadow.querySelector('[cmptype]') ?? null);
+            this.setControlText(this.#shadow.querySelector('[text]') ?? null);
         }
     }
 
